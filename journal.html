@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hening — desain UI jurnal harian dengan palet Spring Water. Tampilan web dan mobile." />
+  <title>Hening · Jurnal UI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/journal.css" />
+</head>
+<body class="mode-gallery">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="studio-bar">
+    <a class="studio-back" href="index.html">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 3.5 5.5 8l5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Ihda
+    </a>
+    <p class="studio-mark">Hening</p>
+    <div class="studio-actions">
+      <div class="seg" role="group" aria-label="Mode tampilan">
+        <button type="button" class="seg-btn is-on" data-mode="gallery">Desain</button>
+        <button type="button" class="seg-btn" data-mode="live">Aplikasi</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="gallery">
+    <section class="intro">
+      <p class="eyebrow">UI study · Spring Water</p>
+      <h1>Hening</h1>
+      <p class="lede">Ruang tenang untuk menulis. Desain jurnal harian yang memakai palet navy, pasir, kayu, dan air — untuk web dan ponsel.</p>
+      <ul class="swatches" aria-label="Palet warna">
+        <li style="--c:#2F4156"><span>Navy</span><code>#2F4156</code></li>
+        <li style="--c:#455763"><span>Muted</span><code>#455763</code></li>
+        <li style="--c:#567C8D"><span>Teal</span><code>#567C8D</code></li>
+        <li style="--c:#65727B"><span>Tide</span><code>#65727B</code></li>
+        <li style="--c:#C8D9E6"><span>Sky</span><code>#C8D9E6</code></li>
+        <li style="--c:#D3DADC"><span>Spring</span><code>#D3DADC</code></li>
+        <li style="--c:#E8E2DA"><span>Sand</span><code>#E8E2DA</code></li>
+        <li style="--c:#F5EFEB"><span>Beige</span><code>#F5EFEB</code></li>
+        <li style="--c:#D6C9B4"><span>Wood</span><code>#D6C9B4</code></li>
+        <li style="--c:#FFFFFF"><span>White</span><code>#FFFFFF</code></li>
+      </ul>
+    </section>
+
+    <section class="stage" aria-label="Pratinjau perangkat">
+      <figure class="device laptop">
+        <figcaption>
+          <span>Web view</span>
+          <em>1.280 × 800</em>
+        </figcaption>
+        <div class="laptop-shell">
+          <div class="laptop-frame">
+            <div class="laptop-top">
+              <span class="laptop-cam" aria-hidden="true"></span>
+              <div class="laptop-screen" id="desktop-root"></div>
+            </div>
+          </div>
+          <div class="laptop-base" aria-hidden="true"></div>
+        </div>
+      </figure>
+
+      <figure class="device phone">
+        <figcaption>
+          <span>Mobile view</span>
+          <em>390 × 844</em>
+        </figcaption>
+        <div class="phone-shell">
+          <div class="phone-bezel">
+            <span class="island" aria-hidden="true"></span>
+            <div class="phone-screen" id="mobile-root"></div>
+          </div>
+        </div>
+      </figure>
+    </section>
+  </div>
+
+  <div id="live-root" hidden></div>
+
+  <script src="js/journal.js"></script>
+</body>
+</html>
