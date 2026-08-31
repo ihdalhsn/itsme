@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ihdalabs/projects/journalitsme/
+    - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/assets
+    - /bin/cp -f journal.html $DEPLOYPATH/index.html
+    - /bin/cp -f css/journal.css $DEPLOYPATH/css/journal.css
+    - /bin/cp -f js/journal.js $DEPLOYPATH/js/journal.js
+    - /bin/cp -f assets/favicon.svg $DEPLOYPATH/assets/favicon.svg
+    - /bin/cp -f .htaccess.journalitsme $DEPLOYPATH/.htaccess
