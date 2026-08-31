@@ -1,0 +1,418 @@
+const translations = {
+  en: {
+    "nav.work": "Work",
+    "nav.approach": "Approach",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "nav.menu": "Menu",
+
+    "hero.role": "Senior Software Developer · Backend & Operational Systems",
+    "hero.headline": "A place to think out loud.",
+    "hero.support": "Notes on the things I come across, learn, build, and think about along the way.",
+    "hero.ctaWork": "View work",
+    "hero.ctaContact": "Contact",
+
+    "profile.eyebrow": "Profile",
+    "profile.title": "Developer with an operational mindset.",
+    "profile.lead": "I work at the intersection of software engineering, business-process analysis and practical product design.",
+    "profile.body": "I am strongest when a project needs more than CRUD: understand the workflow, identify the real bottleneck, and turn it into a simple, maintainable system.",
+    "profile.after": "After completing my Telkomsigma role in 2024, I returned to independent product development. I now build applications for cooperative finance, pharmacy operations and gold-zakat tracking.",
+    "profile.focus": "Core focus",
+    "profile.focus1": "Business Flow Analysis",
+    "profile.focus2": "Backend Architecture",
+    "profile.focus3": "Database Design",
+    "profile.focus4": "Operational UI/UX",
+    "profile.focus5": "Debugging & Maintenance",
+    "profile.focus6": "Deployment Support",
+
+    "work.eyebrow": "Featured products",
+    "work.title": "Operational products built around real workflows.",
+    "work.lead": "From cooperative finance to pharmacy operations — systems designed for daily use, not demos.",
+
+    "finnest.status": "Active development · Semi-production",
+    "finnest.category": "Project 01 · Cooperative finance",
+    "finnest.tagline": "Sharing Prosperity, Strengthening Families",
+    "finnest.desc": "A transparent digital cooperative for members and administrators.",
+    "finnest.problemLabel": "Problem",
+    "finnest.problem": "Records were distributed across forms and spreadsheets. Members had limited direct access to savings, installment and transaction information.",
+    "finnest.solutionLabel": "Solution",
+    "finnest.solution": "A centralized Laravel application with admin and member portals, structured transactions and downloadable reporting.",
+    "finnest.modulesLabel": "Core modules",
+    "finnest.mod1": "Member Management",
+    "finnest.mod2": "Compulsory Savings",
+    "finnest.mod3": "Principal & Voluntary Savings",
+    "finnest.mod4": "Loans & Installments",
+    "finnest.mod5": "Purchase Agreements",
+    "finnest.mod6": "Transaction History",
+    "finnest.mod7": "Financial Reports",
+    "finnest.mod8": "Member Portal",
+    "finnest.contribLabel": "My contribution",
+    "finnest.contrib": "Product definition, business rules, database schema, backend development, UI refinement, debugging, MySQL migration, local/semi-production setup and PDF exports.",
+
+    "siaga.status": "Active development",
+    "siaga.category": "Project 02 · Pharmacy operations",
+    "siaga.tagline": "Operational system for branches 24 and 25",
+    "siaga.desc": "Turning a fragmented Excel workflow into a structured operational system.",
+    "siaga.problemLabel": "Problem",
+    "siaga.problem": "Operational data lived across multiple workbooks. Medicine prices changed frequently, purchasing involved multiple PBF suppliers, and stock/history needed clearer traceability.",
+    "siaga.solutionLabel": "Solution",
+    "siaga.solution": "A modular web application designed around the real pharmacy workflow, starting with master data, purchases, pricing, sales, bills and cash flow.",
+    "siaga.modulesLabel": "Core modules & rules",
+    "siaga.mod1": "Branch & PBF Data",
+    "siaga.mod2": "Medicine Master",
+    "siaga.mod3": "Purchases / DPB",
+    "siaga.mod4": "Price Confirmation",
+    "siaga.mod5": "OTC / Reg / VIP Prices",
+    "siaga.mod6": "Medical Sales",
+    "siaga.mod7": "Supplier Bills",
+    "siaga.mod8": "Cash Flow",
+    "siaga.mod9": "Batch & Expiry Planning",
+    "siaga.mod10": "Returns & Stock Movement",
+    "siaga.contribLabel": "My contribution",
+    "siaga.contrib": "Direct business-process discovery, Excel/data analysis, medicine-pricing formulas, database modelling, incremental module planning, UI direction and Laravel implementation.",
+
+    "haul.status": "Product concept · Planned mobile app",
+    "haul.category": "Project 03 · Personal finance & zakat",
+    "haul.tagline": "Gold savings and zakat due-date tracker",
+    "haul.desc": "Making the nearest gold-zakat obligation easy to trace.",
+    "haul.problemLabel": "Problem",
+    "haul.problem": "The main difficulty is not simply calculating zakat, but tracing which gold holding is approaching its haul and which obligation should be prioritized.",
+    "haul.solutionLabel": "Product direction",
+    "haul.solution": "A mobile dashboard that records each gold purchase and surfaces the nearest haul, supported by price updates and practical notifications.",
+    "haul.modulesLabel": "Planned data & features",
+    "haul.mod1": "Gregorian Purchase Date",
+    "haul.mod2": "Hijri Month / Haul Reference",
+    "haul.mod3": "Manufacturer & Weight",
+    "haul.mod4": "Quantity & Serial Number",
+    "haul.mod5": "CertiEye Evidence",
+    "haul.mod6": "Purchase Price",
+    "haul.mod7": "Daily Gold Price API",
+    "haul.mod8": "Nearest-Haul Dashboard",
+    "haul.mod9": "Priority & Notifications",
+    "haul.mod10": "Zakat Calculation Support",
+    "haul.contribLabel": "Product thinking",
+    "haul.contrib": "The scope is deliberately centered on the user's real pain point: tracing time and priority. Secondary features are added only when they support that decision.",
+    "haul.principle": "Build the reminder and prioritization workflow first — not a large financial platform that distracts from the core problem.",
+
+    "exp.eyebrow": "Experience",
+    "exp.title": "From backend development to production operations.",
+    "exp.lead": "Around four years building, maintaining and improving web-based operational systems.",
+
+    "exp1.period": "2024–Present",
+    "exp1.role": "Independent Software Product Development",
+    "exp1.org": "Self-directed projects · Indonesia",
+    "exp1.body": "Product discovery, business rules, database structure, backend implementation, UI refinement, testing and deployment experiments. Discover operational workflows and translate them into product scope and implementation plans.",
+
+    "exp2.period": "2022–2024",
+    "exp2.role": "Senior Developer — Outsourced Assignment",
+    "exp2.org": "PT Sigma Cipta Caraka (Telkomsigma) · Telkomsel Production Release & Deployment",
+    "exp2.body": "Managed and improved a web-based operational management application using CodeIgniter, MySQL and Git.",
+    "exp2.b1": "Feature improvement, bug fixing, maintenance and backup",
+    "exp2.b2": "Server, database, API, deployment and production troubleshooting",
+    "exp2.b3": "SSL activation and web-application environment configuration",
+    "exp2.b4": "Collaborated with operational users to understand issues and implement reliable changes",
+
+    "exp3.period": "2016–2017",
+    "exp3.role": "Backend Developer",
+    "exp3.org": "PT Biline Aplikasi Digital · Bandung",
+    "exp3.body": "API and backend web programming. Database engineering and application data support.",
+
+    "exp4.period": "May–Oct 2016",
+    "exp4.role": "Freelance Programmer & Internship",
+    "exp4.org": "CV Biometrika Nusantara · Bandung",
+    "exp4.body": "Frontend web programming and company finance-management web application development.",
+
+    "cap.eyebrow": "Capabilities",
+    "cap.title": "Practical engineering for data-heavy operations.",
+    "cap.lead": "Understand the operation, protect the data, improve the workflow and keep the application maintainable.",
+    "cap1.title": "Business-process analysis",
+    "cap1.body": "Map current workflows, bottlenecks, exceptions and essential rules.",
+    "cap2.title": "Backend & database development",
+    "cap2.body": "Design modules, relationships, validation, calculations and reliable data flows.",
+    "cap3.title": "Maintenance & troubleshooting",
+    "cap3.body": "Investigate bugs, check servers/databases, support backups, deployment and SSL.",
+    "cap4.title": "Operational UI/UX",
+    "cap4.body": "Create fast, clear data-entry screens with searchable inputs and useful summaries.",
+    "cap5.title": "Incremental implementation",
+    "cap5.body": "Build the highest-value flow first, validate it and expand without over-engineering.",
+    "cap6.title": "Technical communication",
+    "cap6.body": "Translate operational needs into rules, schemas, implementation plans and documentation.",
+    "cap.toolkit": "Technical toolkit",
+
+    "approach.eyebrow": "Working approach",
+    "approach.title": "How I ship reliable operational software.",
+    "approach.a1.num": "01",
+    "approach.a1.title": "Understand",
+    "approach.a1.body": "Study the operation before defining the system. Observe how users record information, make decisions and handle exceptions.",
+    "approach.a2.num": "02",
+    "approach.a2.title": "Model",
+    "approach.a2.body": "Separate master data, transactions and history. Document calculations and operational constraints clearly.",
+    "approach.a3.num": "03",
+    "approach.a3.title": "Deliver",
+    "approach.a3.body": "Build the highest-value workflow first. Test it with users, then expand without unnecessary complexity.",
+    "approach.a4.num": "04",
+    "approach.a4.title": "Stabilize",
+    "approach.a4.body": "Prioritize validation, maintainability, backups, debugging and traceable reporting.",
+
+    "bg.eyebrow": "Background",
+    "bg.title": "Education, achievements & foundation.",
+    "bg.lead": "A technical foundation supported by product competitions, organizational work and hands-on development.",
+    "bg.eduLabel": "Education",
+    "bg.eduDegree": "Bachelor of Informatics Engineering",
+    "bg.eduSchool": "Telkom University · 2013–2017 · GPA 3.54",
+    "bg.eduBody": "Software development, database systems, API/backend programming, embedded-system projects and organizational technology management.",
+    "bg.langLabel": "Languages",
+    "bg.langId": "Bahasa Indonesia · Native",
+    "bg.langEn": "English · Professional working proficiency",
+    "bg.achLabel": "Achievements",
+    "bg.ach1": "Honorable Merit — APICTA, Taipei · 2016",
+    "bg.ach2": "Finalist — IEEE SSCS Electronics Design Contest · Bandung · 2016",
+    "bg.ach3": "Finalist — COMPFEST7 Open App Challenge · 2015",
+    "bg.orgLabel": "Organization",
+    "bg.org1": "Laboratory Assistant — Hardware & Embedded System Studio · 2016–2017",
+    "bg.org2": "Communication & Information Department — BEM-KEMA Telkom University · 2016–2017",
+
+    "contact.eyebrow": "Contact",
+    "contact.title": "Let’s build software that makes the operation clearer.",
+    "contact.lead": "Open to conversations about backend development, business applications, operational-system improvement and product collaboration.",
+    "contact.email": "Email",
+    "contact.phone": "Phone",
+    "contact.linkedin": "LinkedIn",
+    "contact.github": "GitHub",
+    "contact.downloadCv": "View / Print CV",
+    "contact.downloadPortfolio": "View / Print Portfolio",
+
+    "footer.copy": "Ihda Husnayain · Portfolio 2026",
+  },
+
+  id: {
+    "nav.work": "Karya",
+    "nav.approach": "Pendekatan",
+    "nav.about": "Tentang",
+    "nav.contact": "Kontak",
+    "nav.menu": "Menu",
+
+    "hero.role": "Senior Software Developer · Backend & Sistem Operasional",
+    "hero.headline": "Tempat untuk berpikir dengan lantang.",
+    "hero.support": "Catatan tentang hal-hal yang saya temui, pelajari, bangun, dan pikirkan sepanjang perjalanan.",
+    "hero.ctaWork": "Lihat karya",
+    "hero.ctaContact": "Kontak",
+
+    "profile.eyebrow": "Profil",
+    "profile.title": "Developer dengan pola pikir operasional.",
+    "profile.lead": "Saya bekerja di persimpangan software engineering, analisis proses bisnis, dan desain produk yang praktis.",
+    "profile.body": "Saya paling kuat saat proyek membutuhkan lebih dari sekadar CRUD: memahami alur kerja, menemukan bottleneck yang sebenarnya, lalu mengubahnya menjadi sistem yang sederhana dan mudah dirawat.",
+    "profile.after": "Setelah menyelesaikan peran di Telkomsigma pada 2024, saya kembali ke pengembangan produk independen. Saat ini saya membangun aplikasi untuk keuangan koperasi, operasional apotek, dan pelacakan zakat emas.",
+    "profile.focus": "Fokus inti",
+    "profile.focus1": "Analisis Alur Bisnis",
+    "profile.focus2": "Arsitektur Backend",
+    "profile.focus3": "Desain Database",
+    "profile.focus4": "UI/UX Operasional",
+    "profile.focus5": "Debugging & Maintenance",
+    "profile.focus6": "Dukungan Deployment",
+
+    "work.eyebrow": "Produk unggulan",
+    "work.title": "Produk operasional yang dibangun di sekitar alur kerja nyata.",
+    "work.lead": "Dari keuangan koperasi hingga operasional apotek — sistem yang dirancang untuk pemakaian harian, bukan sekadar demo.",
+
+    "finnest.status": "Pengembangan aktif · Semi-produksi",
+    "finnest.category": "Proyek 01 · Keuangan koperasi",
+    "finnest.tagline": "Sharing Prosperity, Strengthening Families",
+    "finnest.desc": "Koperasi digital yang transparan untuk anggota dan administrator.",
+    "finnest.problemLabel": "Masalah",
+    "finnest.problem": "Catatan tersebar di formulir dan spreadsheet. Anggota memiliki akses terbatas ke informasi simpanan, cicilan, dan transaksi.",
+    "finnest.solutionLabel": "Solusi",
+    "finnest.solution": "Aplikasi Laravel terpusat dengan portal admin dan anggota, transaksi terstruktur, serta laporan yang dapat diunduh.",
+    "finnest.modulesLabel": "Modul inti",
+    "finnest.mod1": "Manajemen Anggota",
+    "finnest.mod2": "Simpanan Wajib",
+    "finnest.mod3": "Simpanan Pokok & Sukarela",
+    "finnest.mod4": "Pinjaman & Cicilan",
+    "finnest.mod5": "Perjanjian Pembelian",
+    "finnest.mod6": "Riwayat Transaksi",
+    "finnest.mod7": "Laporan Keuangan",
+    "finnest.mod8": "Portal Anggota",
+    "finnest.contribLabel": "Kontribusi saya",
+    "finnest.contrib": "Definisi produk, aturan bisnis, skema database, pengembangan backend, penyempurnaan UI, debugging, migrasi MySQL, setup lokal/semi-produksi, dan ekspor PDF.",
+
+    "siaga.status": "Pengembangan aktif",
+    "siaga.category": "Proyek 02 · Operasional apotek",
+    "siaga.tagline": "Sistem operasional untuk cabang 24 dan 25",
+    "siaga.desc": "Mengubah alur kerja Excel yang terfragmentasi menjadi sistem operasional terstruktur.",
+    "siaga.problemLabel": "Masalah",
+    "siaga.problem": "Data operasional tersebar di banyak workbook. Harga obat sering berubah, pembelian melibatkan banyak PBF, dan stok/riwayat membutuhkan ketertelusuran yang lebih jelas.",
+    "siaga.solutionLabel": "Solusi",
+    "siaga.solution": "Aplikasi web modular yang dirancang mengikuti alur kerja apotek yang sebenarnya, dimulai dari master data, pembelian, harga, penjualan, tagihan, dan arus kas.",
+    "siaga.modulesLabel": "Modul & aturan inti",
+    "siaga.mod1": "Data Cabang & PBF",
+    "siaga.mod2": "Master Obat",
+    "siaga.mod3": "Pembelian / DPB",
+    "siaga.mod4": "Konfirmasi Harga",
+    "siaga.mod5": "Harga OTC / Reg / VIP",
+    "siaga.mod6": "Penjualan Medis",
+    "siaga.mod7": "Tagihan Supplier",
+    "siaga.mod8": "Arus Kas",
+    "siaga.mod9": "Perencanaan Batch & Expired",
+    "siaga.mod10": "Retur & Pergerakan Stok",
+    "siaga.contribLabel": "Kontribusi saya",
+    "siaga.contrib": "Discovery proses bisnis langsung, analisis Excel/data, formula harga obat, pemodelan database, perencanaan modul bertahap, arah UI, dan implementasi Laravel.",
+
+    "haul.status": "Konsep produk · Rencana aplikasi mobile",
+    "haul.category": "Proyek 03 · Keuangan pribadi & zakat",
+    "haul.tagline": "Pelacak tabungan emas dan jatuh tempo zakat",
+    "haul.desc": "Membuat kewajiban zakat emas terdekat mudah dilacak.",
+    "haul.problemLabel": "Masalah",
+    "haul.problem": "Kesulitan utamanya bukan sekadar menghitung zakat, melainkan melacak kepemilikan emas mana yang mendekati haul dan kewajiban mana yang harus diprioritaskan.",
+    "haul.solutionLabel": "Arah produk",
+    "haul.solution": "Dashboard mobile yang mencatat setiap pembelian emas dan menampilkan haul terdekat, didukung pembaruan harga serta notifikasi praktis.",
+    "haul.modulesLabel": "Data & fitur yang direncanakan",
+    "haul.mod1": "Tanggal Pembelian Masehi",
+    "haul.mod2": "Bulan Hijriah / Referensi Haul",
+    "haul.mod3": "Produsen & Berat",
+    "haul.mod4": "Jumlah & Nomor Seri",
+    "haul.mod5": "Bukti CertiEye",
+    "haul.mod6": "Harga Beli",
+    "haul.mod7": "API Harga Emas Harian",
+    "haul.mod8": "Dashboard Haul Terdekat",
+    "haul.mod9": "Prioritas & Notifikasi",
+    "haul.mod10": "Dukungan Perhitungan Zakat",
+    "haul.contribLabel": "Pemikiran produk",
+    "haul.contrib": "Ruang lingkup sengaja dipusatkan pada pain point pengguna yang sebenarnya: pelacakan waktu dan prioritas. Fitur sekunder hanya ditambahkan jika mendukung keputusan itu.",
+    "haul.principle": "Bangun dulu alur pengingat dan prioritas — bukan platform keuangan besar yang mengalihkan dari masalah inti.",
+
+    "exp.eyebrow": "Pengalaman",
+    "exp.title": "Dari pengembangan backend hingga operasi produksi.",
+    "exp.lead": "Sekitar empat tahun membangun, merawat, dan meningkatkan sistem operasional berbasis web.",
+
+    "exp1.period": "2024–Sekarang",
+    "exp1.role": "Pengembangan Produk Perangkat Lunak Independen",
+    "exp1.org": "Proyek mandiri · Indonesia",
+    "exp1.body": "Discovery produk, aturan bisnis, struktur database, implementasi backend, penyempurnaan UI, pengujian, dan eksperimen deployment. Mengamati alur operasional dan menerjemahkannya menjadi ruang lingkup produk serta rencana implementasi.",
+
+    "exp2.period": "2022–2024",
+    "exp2.role": "Senior Developer — Penugasan Outsourcing",
+    "exp2.org": "PT Sigma Cipta Caraka (Telkomsigma) · Telkomsel Production Release & Deployment",
+    "exp2.body": "Mengelola dan meningkatkan aplikasi manajemen operasional berbasis web menggunakan CodeIgniter, MySQL, dan Git.",
+    "exp2.b1": "Peningkatan fitur, perbaikan bug, maintenance, dan backup",
+    "exp2.b2": "Server, database, API, deployment, dan troubleshooting produksi",
+    "exp2.b3": "Aktivasi SSL dan konfigurasi lingkungan aplikasi web",
+    "exp2.b4": "Berkolaborasi dengan pengguna operasional untuk memahami isu dan menerapkan perubahan yang andal",
+
+    "exp3.period": "2016–2017",
+    "exp3.role": "Backend Developer",
+    "exp3.org": "PT Biline Aplikasi Digital · Bandung",
+    "exp3.body": "Pemrograman API dan backend web. Rekayasa database dan dukungan data aplikasi.",
+
+    "exp4.period": "Mei–Okt 2016",
+    "exp4.role": "Programmer Freelance & Magang",
+    "exp4.org": "CV Biometrika Nusantara · Bandung",
+    "exp4.body": "Pemrograman frontend web dan pengembangan aplikasi web manajemen keuangan perusahaan.",
+
+    "cap.eyebrow": "Kapabilitas",
+    "cap.title": "Rekayasa praktis untuk operasi yang kaya data.",
+    "cap.lead": "Memahami operasi, melindungi data, memperbaiki alur kerja, dan menjaga aplikasi tetap mudah dirawat.",
+    "cap1.title": "Analisis proses bisnis",
+    "cap1.body": "Memetakan alur kerja saat ini, bottleneck, pengecualian, dan aturan penting.",
+    "cap2.title": "Pengembangan backend & database",
+    "cap2.body": "Merancang modul, relasi, validasi, perhitungan, dan alur data yang andal.",
+    "cap3.title": "Maintenance & troubleshooting",
+    "cap3.body": "Menyelidiki bug, memeriksa server/database, mendukung backup, deployment, dan SSL.",
+    "cap4.title": "UI/UX operasional",
+    "cap4.body": "Membuat layar entri data yang cepat dan jelas dengan input yang dapat dicari serta ringkasan yang berguna.",
+    "cap5.title": "Implementasi bertahap",
+    "cap5.body": "Membangun alur bernilai tertinggi terlebih dahulu, memvalidasinya, lalu memperluas tanpa over-engineering.",
+    "cap6.title": "Komunikasi teknis",
+    "cap6.body": "Menerjemahkan kebutuhan operasional menjadi aturan, skema, rencana implementasi, dan dokumentasi.",
+    "cap.toolkit": "Perangkat teknis",
+
+    "approach.eyebrow": "Pendekatan kerja",
+    "approach.title": "Cara saya menghadirkan perangkat lunak operasional yang andal.",
+    "approach.a1.num": "01",
+    "approach.a1.title": "Pahami",
+    "approach.a1.body": "Pelajari operasi sebelum mendefinisikan sistem. Amati bagaimana pengguna mencatat informasi, mengambil keputusan, dan menangani pengecualian.",
+    "approach.a2.num": "02",
+    "approach.a2.title": "Modelkan",
+    "approach.a2.body": "Pisahkan master data, transaksi, dan riwayat. Dokumentasikan perhitungan serta batasan operasional dengan jelas.",
+    "approach.a3.num": "03",
+    "approach.a3.title": "Kirimkan",
+    "approach.a3.body": "Bangun alur bernilai tertinggi terlebih dahulu. Uji dengan pengguna, lalu perluas tanpa kompleksitas yang tidak perlu.",
+    "approach.a4.num": "04",
+    "approach.a4.title": "Stabilkan",
+    "approach.a4.body": "Prioritaskan validasi, maintainability, backup, debugging, dan pelaporan yang dapat dilacak.",
+
+    "bg.eyebrow": "Latar belakang",
+    "bg.title": "Pendidikan, pencapaian & fondasi.",
+    "bg.lead": "Fondasi teknis yang didukung kompetisi produk, kerja organisasi, dan pengembangan langsung.",
+    "bg.eduLabel": "Pendidikan",
+    "bg.eduDegree": "Sarjana Teknik Informatika",
+    "bg.eduSchool": "Telkom University · 2013–2017 · IPK 3.54",
+    "bg.eduBody": "Pengembangan perangkat lunak, sistem database, pemrograman API/backend, proyek embedded system, dan manajemen teknologi organisasi.",
+    "bg.langLabel": "Bahasa",
+    "bg.langId": "Bahasa Indonesia · Native",
+    "bg.langEn": "English · Professional working proficiency",
+    "bg.achLabel": "Pencapaian",
+    "bg.ach1": "Honorable Merit — APICTA, Taipei · 2016",
+    "bg.ach2": "Finalis — IEEE SSCS Electronics Design Contest · Bandung · 2016",
+    "bg.ach3": "Finalis — COMPFEST7 Open App Challenge · 2015",
+    "bg.orgLabel": "Organisasi",
+    "bg.org1": "Asisten Laboratorium — Hardware & Embedded System Studio · 2016–2017",
+    "bg.org2": "Departemen Komunikasi & Informasi — BEM-KEMA Telkom University · 2016–2017",
+
+    "contact.eyebrow": "Kontak",
+    "contact.title": "Mari bangun perangkat lunak yang membuat operasi lebih jelas.",
+    "contact.lead": "Terbuka untuk percakapan tentang pengembangan backend, aplikasi bisnis, peningkatan sistem operasional, dan kolaborasi produk.",
+    "contact.email": "Email",
+    "contact.phone": "Telepon",
+    "contact.linkedin": "LinkedIn",
+    "contact.github": "GitHub",
+    "contact.downloadCv": "Lihat / Cetak CV",
+    "contact.downloadPortfolio": "Lihat / Cetak Portfolio",
+
+    "footer.copy": "Ihda Husnayain · Portfolio 2026",
+  },
+};
+
+const STORAGE_KEY = "ihdalabs-lang";
+
+function getLang() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  return saved === "id" || saved === "en" ? saved : "en";
+}
+
+function setLang(lang) {
+  const next = lang === "id" ? "id" : "en";
+  localStorage.setItem(STORAGE_KEY, next);
+  applyTranslations(next);
+  document.documentElement.lang = next === "id" ? "id" : "en";
+  document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
+    btn.setAttribute("aria-pressed", String(btn.dataset.langBtn === next));
+  });
+}
+
+function applyTranslations(lang) {
+  const dict = translations[lang] || translations.en;
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] != null) {
+      el.textContent = dict[key];
+    }
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-aria");
+    if (dict[key] != null) {
+      el.setAttribute("aria-label", dict[key]);
+    }
+  });
+}
+
+function initI18n() {
+  const lang = getLang();
+  applyTranslations(lang);
+  document.documentElement.lang = lang === "id" ? "id" : "en";
+  document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
+    btn.setAttribute("aria-pressed", String(btn.dataset.langBtn === lang));
+    btn.addEventListener("click", () => setLang(btn.dataset.langBtn));
+  });
+}
+
+window.IhdaI18n = { initI18n, setLang, getLang };
