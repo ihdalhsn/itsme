@@ -181,6 +181,7 @@ const translations = {
     "contact.github": "GitHub",
     "contact.downloadCv": "View / Print CV",
     "contact.downloadPortfolio": "View / Print Portfolio",
+    "contact.journalUi": "Hening · Journal UI",
 
     "footer.copy": "Ihda Husnayain · Portfolio 2026",
   },
@@ -367,6 +368,7 @@ const translations = {
     "contact.github": "GitHub",
     "contact.downloadCv": "Lihat / Cetak CV",
     "contact.downloadPortfolio": "Lihat / Cetak Portfolio",
+    "contact.journalUi": "Hening · UI Jurnal",
 
     "footer.copy": "Ihda Husnayain · Portfolio 2026",
   },
