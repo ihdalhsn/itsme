@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ihda Husnayain — Senior Software Developer building practical, maintainable systems for real operational workflows." />
+  <title>Ihda Husnayain · Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Ihda Husnayain">
+        <svg class="orion-mark" viewBox="0 0 32 14" aria-hidden="true" focusable="false">
+          <circle cx="4" cy="11" r="2"></circle>
+          <circle cx="16" cy="6" r="2"></circle>
+          <circle cx="28" cy="2" r="2"></circle>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-mark">Ihda</span>
+          <span class="brand-sub">ihdalabs</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#approach" data-i18n="nav.approach">Approach</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a class="nav-cta" href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-btn="id" aria-pressed="false">ID</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria="nav.menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <svg class="hero-orion" viewBox="0 0 32 14" aria-hidden="true" focusable="false">
+        <circle cx="4" cy="11" r="2"></circle>
+        <circle cx="16" cy="6" r="2"></circle>
+        <circle cx="28" cy="2" r="2"></circle>
+      </svg>
+      <div class="hero-content">
+        <p class="hero-brand reveal-hero">Ihda Husnayain</p>
+        <p class="hero-role reveal-hero" data-i18n="hero.role">Senior Software Developer · Backend & Operational Systems</p>
+        <h1 class="hero-headline reveal-hero" data-i18n="hero.headline">A place to think out loud.</h1>
+        <p class="hero-support reveal-hero" data-i18n="hero.support">Notes on the things I come across, learn, build, and think about along the way.</p>
+        <div class="hero-cta reveal-hero">
+          <a class="btn btn-primary" href="#work" data-i18n="hero.ctaWork">View work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section profile" id="profile">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="profile.eyebrow">Profile</p>
+          <h2 data-i18n="profile.title">Developer with an operational mindset.</h2>
+          <p class="lead" data-i18n="profile.lead">I work at the intersection of software engineering, business-process analysis and practical product design.</p>
+        </div>
+        <div class="profile-grid reveal">
+          <div class="profile-copy">
+            <p data-i18n="profile.body">I am strongest when a project needs more than CRUD: understand the workflow, identify the real bottleneck, and turn it into a simple, maintainable system.</p>
+            <p data-i18n="profile.after">After completing my Telkomsigma role in 2024, I returned to independent product development. I now build applications for cooperative finance, pharmacy operations and gold-zakat tracking.</p>
+          </div>
+          <div class="profile-focus">
+            <p class="focus-label" data-i18n="profile.focus">Core focus</p>
+            <ul class="focus-list">
+              <li data-i18n="profile.focus1">Business Flow Analysis</li>
+              <li data-i18n="profile.focus2">Backend Architecture</li>
+              <li data-i18n="profile.focus3">Database Design</li>
+              <li data-i18n="profile.focus4">Operational UI/UX</li>
+              <li data-i18n="profile.focus5">Debugging & Maintenance</li>
+              <li data-i18n="profile.focus6">Deployment Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="work.eyebrow">Featured products</p>
+          <h2 data-i18n="work.title">Operational products built around real workflows.</h2>
+          <p class="lead" data-i18n="work.lead">From cooperative finance to pharmacy operations — systems designed for daily use, not demos.</p>
+        </div>
+
+        <article class="project project--featured reveal" id="finnest">
+          <div class="project-meta">
+            <p class="project-status" data-i18n="finnest.status">Active development · Semi-production</p>
+            <p class="project-category" data-i18n="finnest.category">Project 01 · Cooperative finance</p>
+          </div>
+          <div class="project-head">
+            <h3>FinNest</h3>
+            <p class="project-tagline" data-i18n="finnest.tagline">Sharing Prosperity, Strengthening Families</p>
+            <p class="project-desc" data-i18n="finnest.desc">A transparent digital cooperative for members and administrators.</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4 data-i18n="finnest.problemLabel">Problem</h4>
+              <p data-i18n="finnest.problem">Records were distributed across forms and spreadsheets. Members had limited direct access to savings, installment and transaction information.</p>
+            </div>
+            <div class="project-col">
+              <h4 data-i18n="finnest.solutionLabel">Solution</h4>
+              <p data-i18n="finnest.solution">A centralized Laravel application with admin and member portals, structured transactions and downloadable reporting.</p>
+            </div>
+          </div>
+          <div class="project-modules">
+            <h4 data-i18n="finnest.modulesLabel">Core modules</h4>
+            <ul>
+              <li data-i18n="finnest.mod1">Member Management</li>
+              <li data-i18n="finnest.mod2">Compulsory Savings</li>
+              <li data-i18n="finnest.mod3">Principal & Voluntary Savings</li>
+              <li data-i18n="finnest.mod4">Loans & Installments</li>
+              <li data-i18n="finnest.mod5">Purchase Agreements</li>
+              <li data-i18n="finnest.mod6">Transaction History</li>
+              <li data-i18n="finnest.mod7">Financial Reports</li>
+              <li data-i18n="finnest.mod8">Member Portal</li>
+            </ul>
+          </div>
+          <div class="project-contrib">
+            <h4 data-i18n="finnest.contribLabel">My contribution</h4>
+            <p data-i18n="finnest.contrib">Product definition, business rules, database schema, backend development, UI refinement, debugging, MySQL migration, local/semi-production setup and PDF exports.</p>
+          </div>
+          <ul class="stack-list" aria-label="Tech stack">
+            <li>Laravel</li><li>PHP</li><li>MySQL</li><li>Tailwind CSS</li><li>Vite</li><li>Alpine.js</li>
+          </ul>
+        </article>
+
+        <article class="project reveal" id="siaga">
+          <div class="project-meta">
+            <p class="project-status" data-i18n="siaga.status">Active development</p>
+            <p class="project-category" data-i18n="siaga.category">Project 02 · Pharmacy operations</p>
+          </div>
+          <div class="project-head">
+            <h3>Apotek Siaga</h3>
+            <p class="project-tagline" data-i18n="siaga.tagline">Operational system for branches 24 and 25</p>
+            <p class="project-desc" data-i18n="siaga.desc">Turning a fragmented Excel workflow into a structured operational system.</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4 data-i18n="siaga.problemLabel">Problem</h4>
+              <p data-i18n="siaga.problem">Operational data lived across multiple workbooks. Medicine prices changed frequently, purchasing involved multiple PBF suppliers, and stock/history needed clearer traceability.</p>
+            </div>
+            <div class="project-col">
+              <h4 data-i18n="siaga.solutionLabel">Solution</h4>
+              <p data-i18n="siaga.solution">A modular web application designed around the real pharmacy workflow, starting with master data, purchases, pricing, sales, bills and cash flow.</p>
+            </div>
+          </div>
+          <div class="project-modules">
+            <h4 data-i18n="siaga.modulesLabel">Core modules & rules</h4>
+            <ul>
+              <li data-i18n="siaga.mod1">Branch & PBF Data</li>
+              <li data-i18n="siaga.mod2">Medicine Master</li>
+              <li data-i18n="siaga.mod3">Purchases / DPB</li>
+              <li data-i18n="siaga.mod4">Price Confirmation</li>
+              <li data-i18n="siaga.mod5">OTC / Reg / VIP Prices</li>
+              <li data-i18n="siaga.mod6">Medical Sales</li>
+              <li data-i18n="siaga.mod7">Supplier Bills</li>
+              <li data-i18n="siaga.mod8">Cash Flow</li>
+              <li data-i18n="siaga.mod9">Batch & Expiry Planning</li>
+              <li data-i18n="siaga.mod10">Returns & Stock Movement</li>
+            </ul>
+          </div>
+          <div class="project-contrib">
+            <h4 data-i18n="siaga.contribLabel">My contribution</h4>
+            <p data-i18n="siaga.contrib">Direct business-process discovery, Excel/data analysis, medicine-pricing formulas, database modelling, incremental module planning, UI direction and Laravel implementation.</p>
+          </div>
+          <ul class="stack-list" aria-label="Tech stack">
+            <li>Laravel</li><li>MySQL</li><li>JavaScript</li><li>Data Migration</li><li>Business Analysis</li>
+          </ul>
+        </article>
+
+        <article class="project reveal" id="haul">
+          <div class="project-meta">
+            <p class="project-status" data-i18n="haul.status">Product concept · Planned mobile app</p>
+            <p class="project-category" data-i18n="haul.category">Project 03 · Personal finance & zakat</p>
+          </div>
+          <div class="project-head">
+            <h3>Haul</h3>
+            <p class="project-tagline" data-i18n="haul.tagline">Gold savings and zakat due-date tracker</p>
+            <p class="project-desc" data-i18n="haul.desc">Making the nearest gold-zakat obligation easy to trace.</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4 data-i18n="haul.problemLabel">Problem</h4>
+              <p data-i18n="haul.problem">The main difficulty is not simply calculating zakat, but tracing which gold holding is approaching its haul and which obligation should be prioritized.</p>
+            </div>
+            <div class="project-col">
+              <h4 data-i18n="haul.solutionLabel">Product direction</h4>
+              <p data-i18n="haul.solution">A mobile dashboard that records each gold purchase and surfaces the nearest haul, supported by price updates and practical notifications.</p>
+            </div>
+          </div>
+          <div class="project-modules">
+            <h4 data-i18n="haul.modulesLabel">Planned data & features</h4>
+            <ul>
+              <li data-i18n="haul.mod1">Gregorian Purchase Date</li>
+              <li data-i18n="haul.mod2">Hijri Month / Haul Reference</li>
+              <li data-i18n="haul.mod3">Manufacturer & Weight</li>
+              <li data-i18n="haul.mod4">Quantity & Serial Number</li>
+              <li data-i18n="haul.mod5">CertiEye Evidence</li>
+              <li data-i18n="haul.mod6">Purchase Price</li>
+              <li data-i18n="haul.mod7">Daily Gold Price API</li>
+              <li data-i18n="haul.mod8">Nearest-Haul Dashboard</li>
+              <li data-i18n="haul.mod9">Priority & Notifications</li>
+              <li data-i18n="haul.mod10">Zakat Calculation Support</li>
+            </ul>
+          </div>
+          <div class="project-contrib">
+            <h4 data-i18n="haul.contribLabel">Product thinking</h4>
+            <p data-i18n="haul.contrib">The scope is deliberately centered on the user's real pain point: tracing time and priority. Secondary features are added only when they support that decision.</p>
+            <p class="project-principle" data-i18n="haul.principle">Build the reminder and prioritization workflow first — not a large financial platform that distracts from the core problem.</p>
+          </div>
+          <ul class="stack-list" aria-label="Tech stack">
+            <li>Mobile Product</li><li>API Integration</li><li>Notification Design</li><li>Domain Modelling</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+          <h2 data-i18n="exp.title">From backend development to production operations.</h2>
+          <p class="lead" data-i18n="exp.lead">Around four years building, maintaining and improving web-based operational systems.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <p class="timeline-period" data-i18n="exp1.period">2024–Present</p>
+            <div class="timeline-content">
+              <h3 data-i18n="exp1.role">Independent Software Product Development</h3>
+              <p class="timeline-org" data-i18n="exp1.org">Self-directed projects · Indonesia</p>
+              <p data-i18n="exp1.body">Product discovery, business rules, database structure, backend implementation, UI refinement, testing and deployment experiments. Discover operational workflows and translate them into product scope and implementation plans.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-period" data-i18n="exp2.period">2022–2024</p>
+            <div class="timeline-content">
+              <h3 data-i18n="exp2.role">Senior Developer — Outsourced Assignment</h3>
+              <p class="timeline-org" data-i18n="exp2.org">PT Sigma Cipta Caraka (Telkomsigma) · Telkomsel Production Release & Deployment</p>
+              <p data-i18n="exp2.body">Managed and improved a web-based operational management application using CodeIgniter, MySQL and Git.</p>
+              <ul>
+                <li data-i18n="exp2.b1">Feature improvement, bug fixing, maintenance and backup</li>
+                <li data-i18n="exp2.b2">Server, database, API, deployment and production troubleshooting</li>
+                <li data-i18n="exp2.b3">SSL activation and web-application environment configuration</li>
+                <li data-i18n="exp2.b4">Collaborated with operational users to understand issues and implement reliable changes</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-period" data-i18n="exp3.period">2016–2017</p>
+            <div class="timeline-content">
+              <h3 data-i18n="exp3.role">Backend Developer</h3>
+              <p class="timeline-org" data-i18n="exp3.org">PT Biline Aplikasi Digital · Bandung</p>
+              <p data-i18n="exp3.body">API and backend web programming. Database engineering and application data support.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-period" data-i18n="exp4.period">May–Oct 2016</p>
+            <div class="timeline-content">
+              <h3 data-i18n="exp4.role">Freelance Programmer & Internship</h3>
+              <p class="timeline-org" data-i18n="exp4.org">CV Biometrika Nusantara · Bandung</p>
+              <p data-i18n="exp4.body">Frontend web programming and company finance-management web application development.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="cap.eyebrow">Capabilities</p>
+          <h2 data-i18n="cap.title">Practical engineering for data-heavy operations.</h2>
+          <p class="lead" data-i18n="cap.lead">Understand the operation, protect the data, improve the workflow and keep the application maintainable.</p>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap1.title">Business-process analysis</h3>
+            <p data-i18n="cap1.body">Map current workflows, bottlenecks, exceptions and essential rules.</p>
+          </article>
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap2.title">Backend & database development</h3>
+            <p data-i18n="cap2.body">Design modules, relationships, validation, calculations and reliable data flows.</p>
+          </article>
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap3.title">Maintenance & troubleshooting</h3>
+            <p data-i18n="cap3.body">Investigate bugs, check servers/databases, support backups, deployment and SSL.</p>
+          </article>
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap4.title">Operational UI/UX</h3>
+            <p data-i18n="cap4.body">Create fast, clear data-entry screens with searchable inputs and useful summaries.</p>
+          </article>
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap5.title">Incremental implementation</h3>
+            <p data-i18n="cap5.body">Build the highest-value flow first, validate it and expand without over-engineering.</p>
+          </article>
+          <article class="cap-item reveal">
+            <h3 data-i18n="cap6.title">Technical communication</h3>
+            <p data-i18n="cap6.body">Translate operational needs into rules, schemas, implementation plans and documentation.</p>
+          </article>
+        </div>
+        <div class="toolkit reveal">
+          <p class="focus-label" data-i18n="cap.toolkit">Technical toolkit</p>
+          <ul class="stack-list">
+            <li>PHP</li><li>Laravel</li><li>CodeIgniter</li><li>MySQL</li><li>JavaScript</li>
+            <li>REST API</li><li>Git / GitHub</li><li>Postman</li><li>Blade</li><li>Tailwind CSS</li>
+            <li>Composer</li><li>npm / Vite</li><li>Laragon</li><li>Cloudflare Tunnel</li><li>Server & SSL</li>
+            <li>Python / Django</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="approach.eyebrow">Working approach</p>
+          <h2 data-i18n="approach.title">How I ship reliable operational software.</h2>
+        </div>
+        <ol class="approach-list">
+          <li class="approach-item reveal">
+            <span class="approach-num" data-i18n="approach.a1.num">01</span>
+            <div>
+              <h3 data-i18n="approach.a1.title">Understand</h3>
+              <p data-i18n="approach.a1.body">Study the operation before defining the system. Observe how users record information, make decisions and handle exceptions.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal">
+            <span class="approach-num" data-i18n="approach.a2.num">02</span>
+            <div>
+              <h3 data-i18n="approach.a2.title">Model</h3>
+              <p data-i18n="approach.a2.body">Separate master data, transactions and history. Document calculations and operational constraints clearly.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal">
+            <span class="approach-num" data-i18n="approach.a3.num">03</span>
+            <div>
+              <h3 data-i18n="approach.a3.title">Deliver</h3>
+              <p data-i18n="approach.a3.body">Build the highest-value workflow first. Test it with users, then expand without unnecessary complexity.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal">
+            <span class="approach-num" data-i18n="approach.a4.num">04</span>
+            <div>
+              <h3 data-i18n="approach.a4.title">Stabilize</h3>
+              <p data-i18n="approach.a4.body">Prioritize validation, maintainability, backups, debugging and traceable reporting.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="bg.eyebrow">Background</p>
+          <h2 data-i18n="bg.title">Education, achievements & foundation.</h2>
+          <p class="lead" data-i18n="bg.lead">A technical foundation supported by product competitions, organizational work and hands-on development.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-block reveal">
+            <h3 data-i18n="bg.eduLabel">Education</h3>
+            <p class="about-title" data-i18n="bg.eduDegree">Bachelor of Informatics Engineering</p>
+            <p class="about-meta" data-i18n="bg.eduSchool">Telkom University · 2013–2017 · GPA 3.54</p>
+            <p data-i18n="bg.eduBody">Software development, database systems, API/backend programming, embedded-system projects and organizational technology management.</p>
+          </div>
+          <div class="about-block reveal">
+            <h3 data-i18n="bg.langLabel">Languages</h3>
+            <ul class="plain-list">
+              <li data-i18n="bg.langId">Bahasa Indonesia · Native</li>
+              <li data-i18n="bg.langEn">English · Professional working proficiency</li>
+            </ul>
+          </div>
+          <div class="about-block reveal">
+            <h3 data-i18n="bg.achLabel">Achievements</h3>
+            <ul class="plain-list">
+              <li data-i18n="bg.ach1">Honorable Merit — APICTA, Taipei · 2016</li>
+              <li data-i18n="bg.ach2">Finalist — IEEE SSCS Electronics Design Contest · Bandung · 2016</li>
+              <li data-i18n="bg.ach3">Finalist — COMPFEST7 Open App Challenge · 2015</li>
+            </ul>
+          </div>
+          <div class="about-block reveal">
+            <h3 data-i18n="bg.orgLabel">Organization</h3>
+            <ul class="plain-list">
+              <li data-i18n="bg.org1">Laboratory Assistant — Hardware & Embedded System Studio · 2016–2017</li>
+              <li data-i18n="bg.org2">Communication & Information Department — BEM-KEMA Telkom University · 2016–2017</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Let’s build software that makes the operation clearer.</h2>
+          <p class="lead" data-i18n="contact.lead">Open to conversations about backend development, business applications, operational-system improvement and product collaboration.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <a class="contact-link" href="mailto:ihdalhsn@gmail.com">
+            <span data-i18n="contact.email">Email</span>
+            <strong>ihdalhsn@gmail.com</strong>
+          </a>
+          <a class="contact-link" href="tel:+6282114491291">
+            <span data-i18n="contact.phone">Phone</span>
+            <strong>+62 821-1449-1291</strong>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/ihda-husnayain" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="contact.linkedin">LinkedIn</span>
+            <strong>linkedin.com/in/ihda-husnayain</strong>
+          </a>
+          <a class="contact-link" href="https://github.com/ihdalhsn" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="contact.github">GitHub</span>
+            <strong>github.com/ihdalhsn</strong>
+          </a>
+        </div>
+        <div class="download-row reveal">
+          <a class="btn btn-primary" href="cv.html" target="_blank" rel="noopener noreferrer" data-i18n="contact.downloadCv">View / Print CV</a>
+          <a class="btn btn-ghost" href="portfolio.html" target="_blank" rel="noopener noreferrer" data-i18n="contact.downloadPortfolio">View / Print Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        <svg class="orion-mark" viewBox="0 0 32 14" aria-hidden="true" focusable="false">
+          <circle cx="4" cy="11" r="2"></circle>
+          <circle cx="16" cy="6" r="2"></circle>
+          <circle cx="28" cy="2" r="2"></circle>
+        </svg>
+        <span data-i18n="footer.copy">Ihda Husnayain · Portfolio 2026</span>
+      </p>
+      <a href="#top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
