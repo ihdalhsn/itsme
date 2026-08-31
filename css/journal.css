@@ -1278,6 +1278,23 @@ body.mode-live.live-mobile #live-root .app-desktop {
   display: none;
 }
 
+body.mode-live .m-status {
+  display: none;
+}
+
+body.mode-live.live-mobile .m-body {
+  padding-top: 0.85rem;
+}
+
+body.mode-live.live-mobile .app-mobile {
+  max-width: none;
+  border: 0;
+}
+
+body.mode-live.live-mobile #live-root .tabbar {
+  max-width: none;
+}
+
 @media (max-width: 1100px) {
   .laptop-shell {
     --scale: 0.52;
